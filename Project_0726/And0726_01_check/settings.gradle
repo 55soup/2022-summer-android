@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name = "And0726_01_check"

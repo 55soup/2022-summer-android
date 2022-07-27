@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="좋아하는 아이돌 그룹은?" />
+    <RadioGroup
+        android:id="@+id/rg_idol"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/Cosmic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="우주소녀" />
+        <RadioButton
+            android:id="@+id/BTS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="방탄소년단(BTS)" />
+        <RadioButton
+            android:id="@+id/Seventeen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="세븐틴" />
+    </RadioGroup>
+    <Button
+        android:id="@+id/btn_vote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="투표" />
+
+</LinearLayout>

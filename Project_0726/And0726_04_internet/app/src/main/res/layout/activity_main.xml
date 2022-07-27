@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp"
+    tools:context=".MainActivity">
+    <EditText
+        android:id="@+id/ed_link"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/btn_letter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="글자 나타내기" />
+    <Button
+        android:id="@+id/btn_page"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="홈페이지 열기" />
+    <RadioGroup
+        android:id="@+id/rg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+        <RadioButton
+            android:id="@+id/rb_pie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="파이" />
+        <RadioButton
+            android:id="@+id/rb_orea"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="오레오" />
+    </RadioGroup>
+    <ImageView
+        android:id="@+id/img"
+        android:layout_marginTop="30dp"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:src="@drawable/oreo"
+        android:layout_gravity="center" />
+
+</LinearLayout>
