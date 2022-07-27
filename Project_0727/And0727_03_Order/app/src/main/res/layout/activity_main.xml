@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="주문하실 메뉴를 선택한 뒤 [선택완료]클릭해주세요."/>
+    <GridLayout
+        android:layout_marginTop="20dp"
+        android:columnCount="2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="* 메뉴 종류 *"/>
+        <ImageView
+            android:id="@+id/img"
+            android:layout_gravity="fill"
+            android:layout_rowSpan="3"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/oil"/>
+        <RadioGroup
+            android:id="@+id/rgMenu"
+            android:layout_marginRight="10dp">
+           <RadioButton
+               android:id="@+id/rbOil"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:checked="true"
+               android:text="해물 파스타(9,500원)"/>
+            <RadioButton
+                android:id="@+id/rbTomato"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="토마토 파스타(9,000원)"/>
+            <RadioButton
+                android:id="@+id/rbCream"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="까르보나라(9,500원)"/>
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btn"
+            android:layout_columnSpan="2"
+            android:layout_gravity="center_horizontal"
+            android:text="선택 완료" />
+    </GridLayout>
+
+
+</LinearLayout>

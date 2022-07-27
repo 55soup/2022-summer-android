@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="And 은행 인터넷 뱅킹"
+        android:textSize="20sp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="계좌번호 000-111-2222"
+        android:gravity="center_horizontal"/>
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="3">
+            <Button
+                android:id="@+id/btn1"
+                android:layout_margin="5dp"
+                android:layout_columnWeight="1"
+                android:backgroundTint="#C3C3C3"
+                android:text="잔액"/>
+            <Button
+                android:id="@+id/btn2"
+                android:layout_margin="5dp"
+                android:layout_columnWeight="1"
+                android:backgroundTint="#C3C3C3"
+                android:text="입금"/>
+            <Button
+                android:id="@+id/btn3"
+                android:layout_margin="5dp"
+                android:layout_columnWeight="1"
+                android:backgroundTint="#C3C3C3"
+                android:text="출금"/>
+        </GridLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="ExtraText">
+        <LinearLayout
+            android:id="@+id/lin1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF"
+            android:orientation="vertical"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="통장이름 : 홍길동"
+                android:textSize="20sp"/>
+            <TextView
+                android:id="@+id/txtBal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="잔액: 10000원"
+                android:textSize="20sp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/lin2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="#FFCACA"
+            android:gravity="center"
+            android:padding="10dp"
+            android:visibility="invisible">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="입금금액: " />
+                <EditText
+                    android:id="@+id/edtInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="입금할 금액을 입력하세요."
+                    android:inputType="numberDecimal"/>
+            </LinearLayout>
+            <Button
+                android:id="@+id/btnInput"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="입금 하기" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/lin3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="#90DC9B"
+            android:visibility="invisible"
+            android:padding="10dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="출금금액: " />
+                <EditText
+                    android:id="@+id/edtOutput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="출금할 금액을 입력하세요."
+                    android:inputType="numberDecimal"/>
+            </LinearLayout>
+            <Button
+                android:id="@+id/btnOutput"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="출금 하기" />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

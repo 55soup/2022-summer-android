@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">And0727_02_LinearTest</string>
+    <string-array name="op">
+        <item> + </item>
+        <item> - </item>
+        <item> * </item>
+        <item> % </item>
+    </string-array>
+</resources>
