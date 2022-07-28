@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+        android:rowCount="2">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_rowSpan="2"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/jellybean" />
+        <TextView
+            android:text="아이디: "
+            android:layout_gravity="center_vertical"/>
+        <EditText
+            android:id="@+id/edtId"
+            android:hint="아이디를 입력하세요"
+            android:layout_gravity="fill"/>
+        <TextView
+            android:text="비밀번호: "
+            android:layout_gravity="center_vertical"/>
+        <EditText
+            android:id="@+id/edtPw"
+            android:hint="비밀번호를 입력하세요"
+            android:layout_gravity="fill"/>
+    </GridLayout>
+   <LinearLayout
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:layout_gravity="right">
+       <Button
+           android:id="@+id/btnCancle"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="취소"
+           android:layout_marginRight="5dp"/>
+       <Button
+           android:id="@+id/btnLogin"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="로그인" />
+   </LinearLayout>
+</LinearLayout>

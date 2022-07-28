@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/itemReg"
+        android:title="전화번호등록"/>
+    <item android:title="색상변경">
+        <menu>
+            <item
+                android:id="@+id/itemBlue"
+                android:title="파랑" />
+            <item
+                android:id="@+id/itemGreen"
+                android:title="초록" />
+            <item
+                android:id="@+id/itemDefault"
+                android:title="기본색" />
+        </menu>
+
+    </item>
+</menu>
