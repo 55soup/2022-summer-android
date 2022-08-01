@@ -25,17 +25,20 @@
         </TableRow>
     </TableLayout>
     <TextView
+        android:id="@+id/tvNum"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="25sp"
         android:text="문제 - 2" />
     <TextView
+        android:id="@+id/tvQuiz"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
         android:textSize="25sp"
         android:text="문제" />
     <TextView
+        android:id="@+id/tvOX"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
@@ -47,23 +50,29 @@
         android:layout_height="wrap_content">
         <TableRow>
             <EditText
+                android:id="@+id/edAns"
                 android:layout_width="0dp"
                 android:layout_weight="1"/>
             <Button
+                android:id="@+id/btnIn"
                 android:layout_width="wrap_content"
+                android:enabled="false"
                 android:text="입력" />
         </TableRow>
         <TableRow>
             <Button
+                android:id="@+id/btnStart"
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:text="시작"
                 android:layout_margin="5dp"/>
             <Button
+                android:id="@+id/btnNext"
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:text="다음"
-                android:layout_margin="5dp"/>
+                android:layout_margin="5dp"
+                android:enabled="false"/>
         </TableRow>
     </TableLayout>
     <TextView

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableRow>
+            <TextView
+                android:text="이름: "/>
+            <EditText
+                android:id="@+id/edtName"
+                android:layout_weight="1"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:text="성별: "
+                android:layout_gravity="center"/>
+            <RadioGroup
+                android:id="@+id/rg"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/rdMan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="남자"
+                    android:checked="true"/>
+                <RadioButton
+                    android:id="@+id/rdWoman"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="여자" />
+            </RadioGroup>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:text="전화: "/>
+            <EditText
+                android:id="@+id/edtTel"
+                android:layout_weight="1"
+                android:inputType="numberDecimal"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:text="주소: "/>
+            <EditText
+                android:id="@+id/edtAdd"
+                android:layout_weight="1"/>
+        </TableRow>
+    </TableLayout>
+    <Button
+        android:id="@+id/btnInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="입력" />
+</LinearLayout>
