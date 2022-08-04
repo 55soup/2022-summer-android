@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/car_toast_layout"
+    android:gravity="center"
+    android:background="#cccccc">
+
+    <ImageView
+        android:id="@+id/toast_img"
+        android:layout_width="100px"
+        android:layout_height="100px"
+        android:padding="5px"
+        android:scaleType="fitXY"
+        android:src="@mipmap/ic_launcher_round"/>
+    <TextView
+        android:id="@+id/toast_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10px"
+        android:text="Jeju Sites"
+        android:textColor="#005555"
+        android:textSize="15pt"
+        android:textStyle="bold" />
+
+</LinearLayout>
